@@ -60,7 +60,7 @@
         <DockPanel Width="800">
             <DockPanel DockPanel.Dock="Top" Background="{DynamicResource BackgroundBrush}">
                 
-                <Label FontFamily="Garamond" FontSize="20" FontWeight="Bold" BorderThickness="5" Margin="0, 5, 0, 0" Content="{Binding FileTitle}" DockPanel.Dock="Left"/>
+                <Label FontFamily="Georgia" FontSize="20" FontWeight="Bold" BorderThickness="5" Margin="0, 5, 0, 0" Content="{Binding FileTitle}" DockPanel.Dock="Left"/>
                 
                 <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
                     <Label Content="{Binding LastModifiedAsString}" VerticalAlignment="Center" HorizontalAlignment="Right" HorizontalContentAlignment="Right" FontFamily="Calibri" FontSize="8" />
@@ -122,16 +122,17 @@
                 AutoWordSelection="True" 
                 Background="{DynamicResource BackgroundBrush}" 
                 Cursor="IBeam" 
-                FontFamily="Garamond" 
-                FontSize="20" 
+                FontFamily="Georgia" 
+                FontSize="18" 
                 Foreground="{DynamicResource ForegroundBrush}" 
                 HorizontalContentAlignment="Stretch"
                 VerticalScrollBarVisibility="Auto"
                 Padding="10,10,10,10"
                 ScrollViewer.CanContentScroll="True" 
                 TextWrapping="Wrap" 
-                BorderThickness="10" 
+                BorderThickness="0" 
                 BorderBrush="{DynamicResource BackgroundBrush}" 
+                SelectionBrush="{DynamicResource BackgroundBrush}" 
                 TabIndex="0"
                 Text="{Binding TextContent, UpdateSourceTrigger=PropertyChanged}">
                 <TextBox.Resources>
